@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- sfsf -->
+    <title>VNCHATS.COM - THE FREE VIDEO CHAT</title>
+    <meta name="description" content="VNCHATS.COM chat with stranger. Simply chatting website for everyone.">
+    <meta name="keywords" content="VNCHATS.COM, chat with stranger, talk with stranger, dating website, find friend, learning English">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="faviicon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../stylesheets/home-page-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.4.js"></script>
+   <!-- <script src="../javascripts/testbench.js"> </script> -->
+</head>
+<body>
+    
+    <script>
+  $( function() {
+    $( "#div-term-policy" ).accordion({collapsible : false, active : false});
+    $( ".div-section-info-mobile" ).accordion({collapsible : false, active : false});
+
+    //startTest();
+  } );
+  </script>
+    <header>
+       <img src="../images/logo50x50.jpg" alt="VNCHATS.COM - Chat with stranger, dating website">
+        <h1>VNCHATS.COM - The Free Video Chat Website</h1>
+    </header>
+
+    <main role="main">
+        <section id="section-form">
+            <div id="div-enter">
+                <form action="/enter" method="post">
+                    <button id="button-enter">ENTER IF 18+</button>
+                </form>
+            </div>           
+        </section>
+
+        <section id="section-info">
+            <div id="div-about-us" class="main-section">
+                <h2 class="style-text div-section-header">ABOUT VNCHATS.COM</h2>
+                <p>VNCHATS.COM is a free video chat website. User can connect to everyone in the world. VNCHATS.COM operates by paring randomly 
+                    two users and starting exchange the video together quickly. VNCHATS.COM uses WebRTC an open source technology to establish the 
+                    video call between two users. Unfortunately, IOS device and Safari browser have not supported the technology. However, as the
+                    popular of WebRTC, Apple is being on the way to support WebRTC on IOS, and Safari. Good news, VNCHATS.COM works great on MacOS by 
+                    CHROME, FIREFOX, and OPERA.</br>
+                    For the convenience, user does not need to signup before use VNCHATS.COM. VNCHATS.COM is an Easy-To-Use Web app, so user just click
+                    and start. NOTE: USERS HAVE TO SHARE THEIR CAMERA BEFORE STARTING CONNECT TO SERVER. WE WILL INFORM AN ALERT IF USER HAS NOT SHARED 
+                    THE CAMERA. 
+                </p>
+            </div> 
+            <div id="div-announcement" class="main-section">
+                <h2 class="style-text div-section-header">ANNOUNCEMENT</h2>
+                <div id="div-announcement-img">
+                    <img class="img" src="../images/firefoxicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                    <img class="img" src="../images/chromeicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                    <img class="img" src="../images/operaicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                    <img class="img" src="../images/androidicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                </div>
+                <p>VNCHATS.COM work great on <b>FIREFOX</b>, <b>CHROME</b>, and <b>OPERA</b>. Specially, VNCHATS.COM works great on <b>ANDROID</b> device. 
+                VNCHATS.com will update to work on Safari and Edge in the future.</p>
+            </div>
+            <div id="div-notice" class="main-section">
+                <h2 class="style-text div-section-header">Notice</h2>
+                <p>SEXUAL ACTS ARE STRICTLY PROHIBITED!!! VNCHATS.COM will trace the person who has inappropriate acts. In addition, users might be recored
+                    their video by the stranger. This recored video could be publicized to internet. VNCHATS.COM was made to solve that problem. We will 
+                    constantly notice the users about the rist of recored video. Therefore, the best practice is DO NOT USE VNCHATS.COM FOR ANY SEXUAL ACT. 
+                     </p>
+            </div>
+        </section>   
+        <section id="section-info-mobile">
+            <div id="div-about-us-mobile" class="div-section-info-mobile">
+                <h2 class="style-text">About Us</h2>
+                <p>VNCHATS.COM is a free video chat website. User can connect to everyone in the world. VNCHATS.COM operates by paring randomly 
+                    two users and starting exchange the video together quickly. VNCHATS.COM uses WebRTC an open source technology to establish the 
+                    video call between two users. Unfortunately, IOS device and Safari browser have not supported the technology. However, as the
+                    popular of WebRTC, Apple is being on the way to support WebRTC on IOS, and Safari. Good news, VNCHATS.COM works great on MacOS by 
+                    CHROME, FIREFOX, and OPERA.  </br>
+                    For the convenience, user does not need to signup before use VNCHATS.COM. VNCHATS.COM is an Easy-To-Use Web app, so user just click
+                    and start. NOTE: USERS HAVE TO SHARE THEIR CAMERA BEFORE STARTING CONNECT TO SERVER. WE WILL INFORM AN ALERT IF USER HAS NOT SHARED 
+                    THE CAMERA. 
+                </p>
+            </div> 
+            <div id="div-announcement-mobile" class="div-section-info-mobile">
+                <div id="div-announcement-mobile-img">
+                    <img class="img" src="../images/firefoxicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                    <img class="img" src="../images/chromeicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                    <img class="img" src="../images/operaicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                    <img class="img" src="../images/androidicon.png" alt="VNCHATS.COM - Chat with stranger, dating website"/>
+                </div>
+                <p>VNCHATS.COM work great on <b>FIREFOX</b>, <b>CHROME</b>, and <b>OPERA</b>. Specially, VNCHATS.COM works great on <b>ANDROID</b> device. 
+                VNCHATS.com will update to work on Safari and Edge in the future.</p>
+            </div>
+            <div id="div-notice-mobile" class="div-section-info-mobile">
+                <h2 class="style-text">NOCTICE</h2>
+                <p>SEXUAL ACTS ARE STRICTLY PROHIBITED!!! VNCHATS.COM will trace the person who has inappropriate acts. In addition, users might be recored
+                    their video by the stranger. This recored video could be publicized to internet. VNCHATS.COM was made to solve that problem. We will 
+                    constantly notice the users about the rist of recored video. Therefore, the best practice is DO NOT USE VNCHATS.COM FOR ANY SEXUAL ACT. </p>
+            </div>
+        </section>   
+
+        <section id="section-term-policy">
+            <div id="div-term-policy">
+                <h3>Term & Policy</h3>
+            
+                <p>By using the VNCHATS.COM, you agree to the following terms:</br>
+                     - Do not use VNCHATS.COM if you are under 18. </br>
+                     - Do not transmit nudity, sexual harassment. </br>
+                     - Do not steal and publicize users' private information. </br>
+                     - Do not make statements that defame or libel anyone. </br>
+                     - Do not violate intellectual property rights. </br>
+                     - Do not use automated programs to start chats or recording chat video. </br>
+                     - Do not behave in any other inappropriate or illegal way on Azalea. </br>
+                     - The people on VNCHATS.COM may not behave appropriately, and that they are solely responsible for their own behavior.</br>
+                     - Disconnect if anyone makes you feel uncomfortable. </br>
+                     - You may be denied access to Azalea for inappropriate behavior, or for any other reason. </br>
+                     - VNCHATS.COM proposes all of the neccessary laws to prevent its users from any damage. </br>
+                        Therefore, the provider of VNCHATS.COM, and any entity which involing in VNCHATS.COM operation, shall not be held liable for any direct or indirect damages occuring through the use of VNCHATS.com. 
+                </p>
+            </div>
+        </section>
+        
+    </main>
+   
+    <footer>
+        <p>Copyright Dreamer</p>
+    </footer>
+</body>
+</html>

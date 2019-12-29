@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>VNCHATS.COM - Chat With Stranger</title>
+    <meta name="description" content="VNCHATS.COM chat with stranger. Simply chatting website for everyone.">
+    <meta name="keywords" content="VNCHATS.COM, chat with stranger, talk with stranger, dating website, find friend, learning English">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="faviicon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../stylesheets/chatview-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../javascripts/library/adapter.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.4.js"></script>
+    <script src="../javascripts/client-socket.js"> </script>
+    <script src="../javascripts/client.js"> </script>
+    <script src="../javascripts/PeerConnection.js"> </script>
+    <script src="../javascripts/DataChannel.js"> </script>
+    <script src="../javascripts/Media.js"> </script>
+    <script src="../javascripts/util.js"> </script>
+    
+</head>
+<body>
+
+    <header class="shadow">
+        <!-- <img class="shadow" src="../images/azalea.jpg" alt="Azeala - Easy-To-Use video chat"> -->
+        <h1>VNCHATS.COM - The Free Video Chat Website</h1>
+    </header>
+   
+    <main role="main">
+        <div id="div-webcam">
+            <div id="div-peer-video" class="div-video">
+                <video id="peer-video" class="video shadow" autoplay ></video>
+                <div id="div-mobile-status" class=mobile-control""> <p id="mobile-status" class="mobile-control"> </div>
+                <div id="div-peer-video-control" class="video-control">
+                    <img id="img-resize" class="item-control mobile-control" src="../images/resize50x50.png">
+                    <img id="img-paused" class="item-control non-mobile-control later" src="../images/pause50x50.png">
+                    <img id="img-flip-cam" class="item-control mobile-control" src="../images/flip-cam50x50.png" onclick="onFlipCamButtonClick()">
+                    <img id="img-next" class="item-control mobile-control" src="../images/next50x50.png" onclick="onNextButtonClick()">
+                </div>            
+            </div>
+            <div id="div-my-video" class="div-video">
+                <video id="my-video" class="video shadow" autoplay ></video>
+                <div id="div-my-video-control" class="video-control">
+                    <img id="img-my-pause" class="item-control later" src="../images/pause50x50.png" onclick="myPausedClicked()">
+                    <img id="img-my-mute" class="item-control later" src="../images/micro50x50.png">
+                    <select id="select-webcam" class="item-select-control non-mobile-control later">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="div-chat-area">
+            <div id= "div-message" class="shadow" >
+                <p id="status"></p>
+                <p id="chat"></p>
+            </div>
+            <div id="div-type-area">
+                <button id="next-button"  class="shadow" onclick="onNextButtonClick()">NEXT</button>    
+                <textarea id="typing-message"  class="shadow-inset" rows="3"></textarea>
+                <button id="send-button"  class="shadow" onclick="sendMessageDataChannel()">SEND</button>               
+            </div>
+        </div>
+    </main>
+   
+    <footer>
+   
+    </footer>
+    
+</body>
+</html>
